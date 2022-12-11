@@ -1,0 +1,490 @@
+/* Código de David Ramírez Ruiz */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@100;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-index{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    height: 100vh;  /* Es para tener altura con el Viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(240,202,163,1) 0%, rgba(59,24,95,1) 100%);
+}
+
+.indice{
+    color: #00005C;
+    font-size: 3em;
+    text-align: center;
+    animation: slide-indice 5s forwards;
+}
+
+.lista{
+    margin-top: 40px;
+    animation: silde-ejercicios 5s forwards;
+}
+
+.lista ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.lista ul a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.2s;
+    opacity: 40%;
+}
+.lista ul a:hover{
+    opacity: 100%;
+}
+
+.lista ul li {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.linea_negra{
+    width: 600px;
+    border-bottom: 1px solid black;
+    opacity: 0;
+    animation: anim-linea 3s forwards;
+    animation-delay: 1.5s;
+
+}
+
+@keyframes slide-indice{
+    from{
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX();
+    }    
+}
+@keyframes silde-ejercicios{
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to{
+        
+        transform: translateX();
+        opacity: 1;
+    }    
+}
+@keyframes anim-linea{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.5;
+    }    
+}
+
+/* ##################################### EJERCICIO 1 #################################### */
+
+
+#container-ej1{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 10%, rgba(242,231,213,1) 57%);
+}
+
+.titulo-1{
+    color: white;
+    padding: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.parrafo_1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+.parrafo_2{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+.parrafo_3{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+
+.parrafo_4{
+    color: darkgreen;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+.parrafo_5{
+    color: darkred;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/* ##################################### EJERCICIO 2 #################################### */
+
+#container-ej2{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(40,84,48,1) 0%, rgba(229,217,182,1) 100%);
+}
+
+#container-ej2 p{
+    font-size: 50px;
+}
+
+.titulo-2{
+    color: #E5D9B6;
+    padding: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.caja-1{
+    margin: 100px;
+    text-align: left;
+    padding-left: 80px;
+}
+.caja-2{
+    margin: 100px;
+    text-align: center;
+}
+.caja-3{
+    margin: 100px;
+    text-align: right;
+    padding-right: 80px;
+}
+
+/* ##################################### EJERCICIO 3 #################################### */
+
+#container-ej3{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(160deg, rgba(251,242,207,1) 0%, rgba(250,112,112,1) 100%);
+}
+
+.titulo-3{
+    text-align: center;
+    padding: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.titulo-lista{
+    padding: 20px;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.lista-asignaturas{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+.lista-asignaturas ul{
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 50px;
+    border-top: 1px solid black;
+}
+
+/* ##################################### EJERCICIO 4 #################################### */
+
+#container-ej4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(175deg, rgba(66,3,44,1) 0%, rgba(230,210,170,1) 72%);
+}
+
+.titulo-4{
+    padding: 50px;
+    color: #F5EFE6;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.codigo{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 20px;
+    color: black;
+}
+
+/* ##################################### EJERCICIO 5 #################################### */
+
+#container-ej5{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(-60deg, rgba(47,7,130,1) 0%, rgba(180,205,230,1) 66%);
+
+}
+.titulo-5{
+    padding: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.frase-hipervinculo{
+    margin: 150px;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.frase-hipervinculo a{
+    text-decoration: underline;
+    color: black;
+}
+
+.frase-hipervinculo a:hover{
+    font-size: 80px;
+    transition: 0.4s;
+}
+
+/* ##################################### EJERCICIO 6 #################################### */
+
+#container-ej6{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(160deg, rgba(47,7,130,1) 30%, rgba(240,202,163,1) 100%);
+
+}
+.titulo-6{
+    padding: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #F0CAA3;
+}
+
+.descarga-hipervinculo{
+    margin: 190px;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+
+.descarga-hipervinculo a{
+    text-decoration: underline;
+    color: white;
+}
+
+.descarga-hipervinculo a:hover{
+    font-size: 50px;
+    transition: 0.4s;
+}
+
+/* ##################################### EJERCICIO 7 #################################### */
+
+#container-ej7{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(50deg, rgba(157,166,251,1) 0%, rgba(227,139,41,1) 100%);
+}
+
+.titulo-7{
+    padding: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.contenido{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.foto img{
+    height: 80vh;
+    margin-left: 230px;
+    margin-right: 50px;
+}
+
+.texto p{
+    margin-right: 100px;
+    font-size: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* ##################################### EJERCICIO 8 #################################### */
+
+#container-ej8{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(198,151,73,1) 35%, rgba(0,0,0,1) 100%);
+}
+
+.titulo-8{
+    padding: 50px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.77);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1{
+    margin-left: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.header .contacto{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    font-size: 13px;
+    color: white;
+}
+.header .contacto b{
+    color: rgba(255, 255, 255, 0.708);
+}
+
+.header p{
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+.header .telefono{
+    border-left: 1px solid black;
+}
+.header .fecha{
+    border-left: 1px solid black;
+}
+
+#container-ej8 h2{
+    font-family: 'Poppins', sans-serif;
+}
+#container-ej8 ul li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.estudios{
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid black;
+}
+.estudios h2{
+    margin-left: 50px;
+    padding-right: 20px;
+    font-size: 90px;
+}
+.estudios ul{
+    padding: 25px;
+    margin-left: 185px;
+    border-left: 1px solid black;
+}
+
+
+
+.experiencia{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid black;
+}
+.experiencia h2{
+    margin-left: 50px;
+    padding-right: 20px;
+    font-size: 90px;
+}
+.experiencia ul{
+    padding: 25px;
+    margin-left: 45px;
+    border-left: 1px solid black;
+}
+
+
+.habilidades{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid black;
+}
+.habilidades h2{
+    margin-left: 50px;
+    padding-right: 20px;
+    font-size: 90px;
+}
+.habilidades ul{
+    padding: 25px;
+    margin-left: 20px;
+    border-left: 1px solid black;
+}
+
+
+.idiomas{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid black;
+}
+.idiomas h2{
+    margin-left: 50px;
+    padding-right: 20px;
+    font-size: 90px;
+}
+.idiomas ul{
+    padding: 25px;
+    margin-left: 195px;
+    border-left: 1px solid black;
+}
