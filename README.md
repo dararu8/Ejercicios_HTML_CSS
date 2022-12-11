@@ -1,6 +1,6 @@
 # Ejercicios_HTML_CSS
 
-Creau un document amb un index amb 8 links a cadascun dels exercicis i que s’obrin a pestanyes independe.
+Creau un document amb un index amb 8 links a cadascun dels exercicis
 
 1. Crea un text amb varis paragraphs cada un d’ells amb un color i una font diferents.
 
